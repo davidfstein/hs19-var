@@ -1,0 +1,19 @@
+{
+  "name": "fork-hs19-var",
+  "version": "1.0.0",
+  "description": "![http://www.singlecellvr.com](images/SCVR_logo.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidfstein/hs19-var.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidfstein/hs19-var/issues"
+  },
+  "homepage": "https://github.com/davidfstein/hs19-var#readme"
+}
