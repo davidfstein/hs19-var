@@ -10,9 +10,11 @@
   <body>
     <a-scene id="test">
         <!-- <a-camera id="curve-camera" position="-1.2 0 1" look-controls wasd-controls="acceleration: 20"> -->
-        <a-camera id="curve-camera" position="-1.2 0 1" look-controls>
-            <a-cursor id="cursor"></a-cursor>
-        </a-camera>
+        <a-entity id="rig">
+            <a-camera id="curve-camera" position="-1.2 0 1" look-controls>
+                <a-cursor id="cursor"></a-cursor>
+            </a-camera>
+        </a-entity>
         <a-entity id="curve-container">
 
         </a-entity>
@@ -160,7 +162,7 @@
         let positionIndex = 0
         const moveForward = (positions, rotations) => {
             if (positionIndex !== positions.length) {
-                const camera_el = document.getElementById("curve-camera");
+                const camera_el = document.getElementById("rig");
                 let position = positions[positionIndex];
                 let rotation = rotations[positionIndex];
                 camera_el.setAttribute("position", position);
@@ -171,7 +173,7 @@
 
         const moveBackward = (positions, rotations) => {
             if (positionIndex !== 0) {
-                const camera_el = document.getElementById("curve-camera");
+                const camera_el = document.getElementById("rig");
                 let position = positions[positionIndex];
                 let rotation = rotations[positionIndex];
                 camera_el.setAttribute("position", position);
