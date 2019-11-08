@@ -4,18 +4,15 @@
     <script src="https://rawgit.com/protyze/aframe-curve-component/master/dist/aframe-curve-component.min.js"></script>
     <script src="https://rawgit.com/protyze/aframe-alongpath-component/master/dist/aframe-alongpath-component.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-look-controls-z@^2.0.0/look-controls-z.js"></script>
     <!-- <script src="https://unpkg.com/aframe-curve-component/dist/aframe-curve-component.min.js"></script> -->
     <!-- wasd-controls -->
   </head>
   <body>
     <a-scene id="test">
         <!-- <a-camera id="curve-camera" position="-1.2 0 1" look-controls wasd-controls="acceleration: 20"> -->
-        <a-entity id="rig">
-            <a-camera id="curve-camera" position="-1.2 0 1" look-controls-z>
-                <a-cursor id="cursor"></a-cursor>
-            </a-camera>
-        </a-entity>
+        <a-camera id="curve-camera" position="-1.2 0 1" look-controls>
+            <a-cursor id="cursor"></a-cursor>
+        </a-camera>
         <a-entity id="curve-container">
 
         </a-entity>
