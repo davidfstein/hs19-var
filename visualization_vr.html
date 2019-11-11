@@ -117,7 +117,7 @@
                     const cell_points = JSON.parse(text);
                     const cells = [];
                     cell_points.forEach((cell_point, _) => {
-                        const stream_cell = `<a-sphere position="${cell_point.x} ${cell_point.y} ${cell_point.z}" color="${cell_point.color}" radius="5" shadow></a-sphere>`;
+                        const stream_cell = `<a-sphere position="${cell_point.x} ${cell_point.y} ${cell_point.z}" color="${cell_point.color}" radius=".0005" shadow></a-sphere>`;
                         cells.push(stream_cell);
                     })
                     return cells;
@@ -164,7 +164,7 @@
                 let position = positions[positionIndex];
                 let rotation = rotations[positionIndex];
                 camera_el.object3D.position.set(position);
-                console.log(camera_el.object3D.position.get(position));
+                // console.log(camera_el.object3D.position.get(position));
                 // camera_el.setAttribute("rotation", rotation);
                 positionIndex = positionIndex + 1;
             }
@@ -176,7 +176,7 @@
                 let position = positions[positionIndex];
                 let rotation = rotations[positionIndex];
                 camera_el.object3D.position.set(position);
-                console.log(camera_el.object3D.position.get(position));
+                // console.log(camera_el.object3D.position.get(position));
                 // camera_el.setAttribute("rotation", rotation);
                 positionIndex = positionIndex - 1;
             }
