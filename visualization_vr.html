@@ -9,7 +9,7 @@
   <body>
     <a-scene id="test">
         <a-entity id="rig">
-            <a-entity camera id="curve-camera" look-controls>
+            <a-entity camera="zoom: 10" id="curve-camera" look-controls>
                 <a-cursor id="cursor"></a-cursor>
             </a-entity>
         </a-entity>
@@ -117,7 +117,7 @@
                     const cell_points = JSON.parse(text);
                     const cells = [];
                     cell_points.forEach((cell_point, _) => {
-                        const stream_cell = `<a-sphere position="${cell_point.x} ${cell_point.y} ${cell_point.z}" color="${cell_point.color}" radius=".0005" shadow></a-sphere>`;
+                        const stream_cell = `<a-sphere position="${cell_point.x} ${cell_point.y} ${cell_point.z}" color="${cell_point.color}" radius="5" shadow></a-sphere>`;
                         cells.push(stream_cell);
                     })
                     return cells;
