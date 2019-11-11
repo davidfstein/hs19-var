@@ -163,7 +163,8 @@
                 const camera_el = document.getElementById("rig");
                 let position = positions[positionIndex];
                 let rotation = rotations[positionIndex];
-                camera_el.object3D.position.set(position.x, position.y, position.z);
+                console.log(position.split(" ").join(","));
+                camera_el.object3D.position.set(...position.split(" "));
                 console.log(camera_el.object3D.position);
                 // camera_el.setAttribute("rotation", rotation);
                 positionIndex = positionIndex + 1;
@@ -175,7 +176,7 @@
                 const camera_el = document.getElementById("rig");
                 let position = positions[positionIndex];
                 let rotation = rotations[positionIndex];
-                camera_el.object3D.position.set(position.x, position.y, position.z);
+                camera_el.object3D.position.set(...position.split(" "));
                 console.log(camera_el.object3D.position);
                 // camera_el.setAttribute("rotation", rotation);
                 positionIndex = positionIndex - 1;
