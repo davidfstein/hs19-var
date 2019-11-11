@@ -162,7 +162,7 @@
         let positionIndex = 0
         const moveForward = (positions, rotations) => {
             if (positionIndex !== positions.length) {
-                const camera_el = document.getElementById("curve-camera");
+                const camera_el = document.getElementById("rig");
                 let position = positions[positionIndex];
                 let rotation = rotations[positionIndex];
                 camera_el.setAttribute("position", position);
@@ -174,7 +174,7 @@
 
         const moveBackward = (positions, rotations) => {
             if (positionIndex !== 0) {
-                const camera_el = document.getElementById("curve-camera");
+                const camera_el = document.getElementById("rig");
                 let position = positions[positionIndex];
                 let rotation = rotations[positionIndex];
                 camera_el.setAttribute("position", position);
