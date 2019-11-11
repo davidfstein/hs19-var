@@ -165,8 +165,8 @@
                 const camera_el = document.getElementById("rig");
                 let position = positions[positionIndex];
                 let rotation = rotations[positionIndex];
-                camera_el.setAttribute("position", position);
-                console.log(camera_el.getAttribute("position"));
+                camera_el.object3D.position.set(position);
+                console.log(camera_el.object3D.position.get(position));
                 // camera_el.setAttribute("rotation", rotation);
                 positionIndex = positionIndex + 1;
             }
@@ -177,8 +177,8 @@
                 const camera_el = document.getElementById("rig");
                 let position = positions[positionIndex];
                 let rotation = rotations[positionIndex];
-                camera_el.setAttribute("position", position);
-                console.log(camera_el.getAttribute("position"));
+                camera_el.object3D.position.set(position);
+                console.log(camera_el.object3D.position.get(position));
                 // camera_el.setAttribute("rotation", rotation);
                 positionIndex = positionIndex - 1;
             }
