@@ -4,12 +4,10 @@
     <script src="https://rawgit.com/protyze/aframe-curve-component/master/dist/aframe-curve-component.min.js"></script>
     <script src="https://rawgit.com/protyze/aframe-alongpath-component/master/dist/aframe-alongpath-component.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
-    <!-- <script src="https://unpkg.com/aframe-curve-component/dist/aframe-curve-component.min.js"></script> -->
-    <!-- wasd-controls -->
+
   </head>
   <body>
     <a-scene id="test">
-        <!-- <a-camera id="curve-camera" position="-1.2 0 1" look-controls wasd-controls="acceleration: 20"> -->
         <a-entity id="rig">
             <a-entity camera id="curve-camera" look-controls>
                 <a-cursor id="cursor"></a-cursor>
@@ -22,7 +20,7 @@
         <a-entity id="curve-draw">
 
         </a-entity>
-        <a-entity position="0 0 0" id="cells"></a-entity>
+        <a-entity id="cells"></a-entity>
 
         <a-entity environment="skyType: atmosphere; skyControl: #FFFFFF; ground: hills; groundTexture: checkerboard; groundColor: #c9c4c4; groundColor2: #c9c4c4; shadow: on; shadowSize: 0.1; dressing: cylinder; dressingAmount: 10; dressingColor: #228B22; grid: xlines; gridColor: #228B22"></a-entity>
 
